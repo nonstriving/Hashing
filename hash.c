@@ -14,13 +14,21 @@ long convert(char cpf[13]){
 	return key;
 }
 
-//int hash(int cpf)
+long hash(long key){
+	long value;
+	value=key%7919;
+	return value;
+}
 
 int main(){
 	char cpf[13] = "123456789-12";
 	cpf[12]='\0';
 	long key;
+	long hashv;
 	key=convert(cpf);
-	printf("%ld",key);
+	printf("%ld\n",key);
+	hashv=hash(cpf);
+	print("%ld\n",hashv);
+
 	return 0;
 }
