@@ -3,7 +3,7 @@
 #include <math.h>
 
 long convert(char cpf[12]){
-	int n;
+	long n;
 	int i;
 	for(i=0;i<9;i++){
 		n=n+(c-'0')*(10**(10-i));
