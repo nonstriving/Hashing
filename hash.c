@@ -20,5 +20,6 @@ long convert(char cpf[12]){
 //int hash(int cpf)
 
 int main(){
+	char cpf[12] = '123456789-00';
 	return 0;
 }
