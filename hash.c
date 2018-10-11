@@ -14,7 +14,7 @@ long convert(char cpf[12]){
 		c=cpf[i];
 		key=key+(c-'0')*(10**(11-i))
 	}
-	return n;
+	return key;
 }
 
 //int hash(int cpf)
